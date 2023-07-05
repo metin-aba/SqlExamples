@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Saat ve Karşılama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 100px;
+    }
+
+    #clock {
+      font-size: 48px;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function getTime() {
+      var date = new Date();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var seconds = date.getSeconds();
+
+      hours = formatTime(hours);
+      minutes = formatTime(minutes);
+      seconds = formatTime(seconds);
+
+      var timeString = hours + ":" + minutes + ":" + seconds;
+      return timeString;
+    }
+
+    function formatTime(time) {
+      if (time < 10) {
+        time = "0" + time;
+      }
+      return time;
+    }
+
+    function updateClock() {
+      var clockElement = document.getElementById("clock");
+      clockElement.textContent = getTime();
+    }
+
+    function init() {
+      var name = prompt("İsminizi girin:");
+      var greetingElement = document.getElementById("greeting");
+      greetingElement.textContent = "Merhaba, " + name + "!";
+      setInterval(updateClock, 1000);
+    }
+  </script>
+</head>
+
+<body onload="init()">
+  <h1 id="greeting"></h1>
+  <div id="clock"></div>
+</body>
+
+</html>
