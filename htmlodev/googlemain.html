@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+    #logo {
+      width: 272px;
+      height: 92px;
+      background-image: url(assets/google-logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 20px;
+    }
+    #search-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    #search-input {
+      width: 480px;
+      height: 30px;
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 20px;
+      border: none;
+    }
+    #search-button,
+    #voice-search-button {
+      padding: 5px 10px;
+      font-size: 14px;
+      margin-left: 10px;
+      border-radius: 20px;
+      border: 1px solid #f2f2f2;
+      background-color: #fff;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    #search-button:hover,
+    #voice-search-button:hover {
+      background-color: #f2f2f2;
+    }
+    #search-button:focus,
+    #voice-search-button:focus {
+      outline: none;
+    }
+    #footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+    }
+    #footer a {
+      margin: 0 5px;
+      color: #5f6368;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="logo"></div>
+    <form id="search-form">
+      <input type="text" id="search-input" name="q" autofocus>
+      <input type="submit" id="search-button" value="Google Search">
+      <input type="submit" id="voice-search-button" value="Voice Search">
+    </form>
+    <div id="footer">
+      <a href="#">Advertising</a>
+      <a href="#">Business</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+</body>
+</html>
