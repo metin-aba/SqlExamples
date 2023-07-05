@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Instagram" class="logo">
+            </a>
+            <form class="d-flex align-items-center">
+                <div class="search-box">
+                    <span class="search-icon"></span>
+                    <input type="text" class="form-control" placeholder="Ara" aria-label="Ara">
+                </div>
+            </form>
+            <div class="menu-icons">
+                <a href="#" class="icon-link">
+                    <span class="icon"></span>
+                </a>
+                <a href="#" class="icon-link">
+                    <span class="icon"></span>
+                </a>
+                <a href="#" class="icon-link">
+                    <span class="icon"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-4">
+                <div class="stories">
+                    <div class="story-item">
+                        <img src="story1.jpg" alt="Story 1">
+                        <span class="story-name">Kullanıcı Adı 1</span>
+                    </div>
+                    <div class="story-item">
+                        <img src="story2.jpg" alt="Story 2">
+                        <span class="story-name">Kullanıcı Adı 2</span>
+                    </div>
+                    <div class="story-item">
+                        <img src="story3.jpg" alt="Story 3">
+                        <span class="story-name">Kullanıcı Adı 3</span>
+                    </div>
+                    <!-- Diğer hikayeler -->
+                </div>
+                <div class="feed">
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="profile.jpg" alt="Profil Fotoğrafı" class="profile-img">
+                            <span class="username">Kullanıcı Adı</span>
+                        </div>
+                        <img src="post1.jpg" alt="Gönderi" class="post-img">
+                        <div class="post-footer">
+                            <div class="icons">
+                                <a href="#" class="icon-link">
+                                    <span class="icon"></span>
+                                </a>
+                                <a href="#" class="icon-link">
+                                    <span class="icon"></span>
+                                </a>
+                                <a href="#" class="icon-link">
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                            <div class="likes">Beğenme Sayısı</div>
+                            <div class="caption">
+                                <span class="username">Kullanıcı Adı</span>
+                                <span class="text">Gönderi açıklaması</span>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <span class="username">Kullanıcı Adı</span>
+                                    <span class="text">Yorum</span>
+                                </div>
+                             
+                            </div>
+                            <div class="add-comment">
+                                <input type="text" class="form-control" placeholder="Yorum ekle" aria-label="Yorum ekle">
+                                <button class="btn btn-primary">Paylaş</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sticky-sidebar">
+                    <div class="right-panel">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
